@@ -67,12 +67,10 @@ class ChampionsSpider(scrapy.Spider):
         item["cards"] = cards
 
         details = response.xpath("//div[@class='js-match-status-rw match-status-rw']/text()").get()
-        print("========", details)
         if not details:
             item["details"] = ""
         else:
             item["details"] = details
-        print("/////////", item["details"])
 
         yield item
 
