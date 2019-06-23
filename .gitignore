@@ -1,0 +1,6 @@
+scraping/scraper/__pycache__
+scraping/scraper/spiders/__pycache__
+scraping/geckodriver.log
+scraping/champions.json
+package
+tests
